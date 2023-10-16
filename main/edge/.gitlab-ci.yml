@@ -1,0 +1,40 @@
+image: kmarasovic/alpine-jdk17-ant-mvn
+
+before_script:
+  - echo "Operating system and tools info:"
+  - cat /etc/*-release   
+  - uname -r              
+  - java -version         
+  - which java            
+  - echo $JAVA_HOME
+  - mvn -version  # Changed from ant -version to mvn -version
+
+stages:          
+  - build
+  - test
+  - package
+  - deploy
+
+build-maven:    # Updated job name from build-ant to build-maven   
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - mvn compile  # Changed from ant compile to mvn compile
+  artifacts:
+    paths: 
+      - ./target  # Updated the path according to Maven’s standard directory layout
+
+test:
+  stage: test
+  script:
+    - echo "Inspecting the code for quality ... "
+    - mvn test  # Added the Maven test command to execute the tests
+
+package-jar:        
+  stage: package 
+  script:
+    - echo "Packaging the code..."
+    - mvn package  # Changed from ant jar to mvn package
+  artifacts:
+    paths: 
+      - ./target/*.jar  # Updated the path to where Maven stores the packaged JAR

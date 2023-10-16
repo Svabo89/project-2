@@ -1,0 +1,16 @@
+edu\rit\edgeconverter\parsers\JSONFileParser.class
+edu\rit\edgeconverter\controller\SceneListener$2.class
+edu\rit\edgeconverter\controller\BtnListener.class
+edu\rit\edgeconverter\controller\MenuListener.class
+edu\rit\edgeconverter\controller\SceneListener.class
+edu\rit\edgeconverter\util\DataType.class
+edu\rit\edgeconverter\model\Field.class
+edu\rit\edgeconverter\parsers\EdgeFileConverter.class
+edu\rit\edgeconverter\parsers\FileParser.class
+edu\rit\edgeconverter\model\Table.class
+edu\rit\edgeconverter\controller\SceneListener$1.class
+edu\rit\edgeconverter\controller\EdgeController.class
+edu\rit\edgeconverter\view\ConverterGUI.class
+edu\rit\edgeconverter\controller\FieldListListener.class
+edu\rit\edgeconverter\RunFileConverter.class
+edu\rit\edgeconverter\util\Filter.class

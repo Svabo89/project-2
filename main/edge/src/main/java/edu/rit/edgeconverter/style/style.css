@@ -1,0 +1,48 @@
+/* Set text color to white for various elements */
+.label {
+    -fx-text-fill: black;
+}
+
+.menu-bar .menu .menu-item {
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica";
+}
+
+.radio-button {
+    -fx-text-fill: black;
+}
+
+.text-field {
+    -fx-text-fill: black;
+}
+
+.check-box {
+    -fx-text-fill: black;
+}
+.menu-bar {
+    -fx-background-color: orange;
+}
+.optionsMenu:hover{
+    -fx-background-color: black;
+}
+.menu-item {
+    -fx-background-color: orange;
+    -fx-text-fill: white; /* Change text color to white for better visibility */
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    -fx-background-color: white; /* Change background color on hover for better UX */
+}
+/* Add this to your CSS file */
+.title {
+    font-weight: bold;
+}
+
+.labelFieldList{
+    font-weight: bold;
+}
